@@ -4,7 +4,8 @@ from pathlib import Path
 from flask import Flask, render_template, request
 import joblib
 
-app = Flask(__name__)
+
+app = Flask(__name__, template_folder=".")
 
 # Load trained model and scaler
 # Keep these files in the same folder as app.py for deployment.
